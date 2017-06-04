@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal|center_vertical|center"
+    android:background="#FFFFFF">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@mipmap/bg_app"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView6"
+        android:scaleType="centerCrop"/>
+
+    <ImageView android:id="@+id/splashscreen" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/logonnnnn1"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="178dp"
+        android:layout_above="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <com.facebook.login.widget.LoginButton
+        android:layout_below="@+id/splashscreen"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/loginbutton"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="30dp"
+        />
+
+
+    <TextView
+        android:text="Login with"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/textView"
+        android:textColor="#D2D2D9"
+
+
+        android:layout_below="@id/imageView6"
+
+        android:layout_alignEnd="@+id/fb" />
+
+    <TextView
+        android:text="Sign In"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/fb"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp" />
+
+    <ImageView
+
+
+        android:layout_gravity="bottom|end"
+
+        android:id="@+id/google_plus"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/google_plus"
+
+        android:layout_marginStart="20dp"
+        android:layout_alignTop="@+id/fb"
+        android:layout_toEndOf="@+id/fb" />
+
+    <ImageView
+
+
+        android:layout_gravity="bottom|end"
+
+        android:id="@+id/fb"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/fblogo"
+
+        android:layout_marginBottom="63dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/textView2" />
+
+
+</RelativeLayout>
