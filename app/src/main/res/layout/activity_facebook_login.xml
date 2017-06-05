@@ -15,15 +15,6 @@
         android:id="@+id/imageView6"
         android:scaleType="centerCrop"/>
 
-    <ImageView android:id="@+id/splashscreen" android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/logonnnnn1"
-        android:layout_gravity="center"
-        android:scaleType="centerCrop"
-        android:layout_marginBottom="178dp"
-        android:layout_above="@+id/textView"
-        android:layout_centerHorizontal="true" />
-
     <com.facebook.login.widget.LoginButton
         android:layout_below="@+id/splashscreen"
         android:visibility="gone"
@@ -38,41 +29,39 @@
 
 
     <TextView
-        android:text="Login with"
+        android:text="Sign Up"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
         android:id="@+id/textView"
-        android:textColor="#D2D2D9"
+        android:textColor="#FFFFFF"
 
 
-        android:layout_below="@id/imageView6"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="40dp"
 
-        android:layout_alignEnd="@+id/fb" />
+         />
+
+    <ImageView android:id="@+id/splashscreen" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/logonnnnn1"
+
+        android:scaleType="centerCrop"
+        android:layout_above="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="49dp" />
 
     <TextView
         android:text="Sign In"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView2"
-        android:layout_above="@+id/fb"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="24dp" />
-
-    <ImageView
-
-
-        android:layout_gravity="bottom|end"
-
-        android:id="@+id/google_plus"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:src="@mipmap/google_plus"
-
-        android:layout_marginStart="20dp"
-        android:layout_alignTop="@+id/fb"
-        android:layout_toEndOf="@+id/fb" />
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="50dp"
+        android:layout_above="@+id/google_plus"
+        android:layout_centerHorizontal="true" />
 
     <ImageView
 
@@ -80,13 +69,26 @@
         android:layout_gravity="bottom|end"
 
         android:id="@+id/fb"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:src="@drawable/fblogo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/fb_icon"
 
-        android:layout_marginBottom="63dp"
+        android:layout_marginBottom="115dp"
         android:layout_alignParentBottom="true"
         android:layout_toStartOf="@+id/textView2" />
+
+    <ImageView
+
+
+        android:layout_gravity="bottom|end"
+
+        android:id="@+id/google_plus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/google_plus"
+
+        android:layout_alignTop="@+id/fb"
+        android:layout_toEndOf="@+id/textView2" />
 
 
 </RelativeLayout>
